@@ -1,0 +1,33 @@
+body
+{
+    text-align: center;
+}
+
+input[type="text"],input[type="mail"]{
+ width: 80%;
+ height: 1cm;
+ background-color: brown;
+ border-radius: 20px;
+}
+span{
+    color: red;
+}
+input[type="submit"],input[type="reset"]{
+width: 40%;
+background-color: brown;
+border-radius: 10px;
+color: white;
+}
+label{
+    color: #131416;
+}
+fieldset{
+    width: 20cm;
+    margin-left: 10cm;
+    background-color: rgb(233, 210, 135);
+    border-radius: 10px;
+}
+
+legend{
+    font-size: 30px;
+}

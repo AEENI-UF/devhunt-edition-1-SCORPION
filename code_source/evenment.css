@@ -1,0 +1,131 @@
+#des{
+    width: 15cm;
+    height: 10cm;
+    border: 5px inset rgb(164, 42, 42);
+    float: right;
+    margin-top: -13cm;
+}
+
+.colonne {
+    position: relative;
+    float: left;
+    width: 30%;
+    min-height: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.col {
+    position: relative;
+    width: 50%;
+    min-height: 200px;
+    text-align: center;
+    margin: 4cm;
+    padding: 10px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 150px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
+    -ms-transform: translate(-50px, -50px);
+}
+
+.text {
+    position: relative;
+    background: rgb(242, 207, 81);
+    color: rgb(52, 52, 29);
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.colonne:hover .image {
+    opacity: 0.3;
+}
+
+.colonne:hover .middle {
+    opacity: 1;
+}
+
+.col:hover .image {
+    opacity: 0.3;
+}
+
+.col:hover .middle {
+    opacity: 1;
+}
+
+body{
+    text-align: center;
+    text-decoration-color: aquamarine;
+}
+
+.slide{
+    width: 16cm;
+    height: 15cm;
+    animation-name: sd;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    margin-left: 2cm;
+    border-radius: 20px;
+}
+
+@keyframes sd{
+    0%{background-image: url('cp.jpg');}
+    10%{background-image: url('relia.jpg');}
+    20%{background-image: url('dd.jpg');}
+    30%{background-image: url('respo.jpg');}
+    40%{background-image: url('h.jpg');}
+    50%{background-image: url('gagn.jpg');}
+    60%{background-image: url('l1gg.jpg');}
+    70%{background-image: url('pde.jpg');}
+    80%{background-image: url('lia.jpg');}
+    90%{background-image: url('g2.jpg');}
+    100%{background-image: url('newbie3.jpg');}
+}
+.footer{
+    width: 100%;
+    height: 4cm;
+    background-color: rgb(59, 49, 49);
+    margin-top: 30%;
+}
+#foot{
+    color: white;
+}
+
+/*
+@media screen and (max-width: 1750px) {
+    .footer{
+        width: 100%;
+    }
+    .slide{
+        width: 40%;
+    }
+    .colonne{
+        width: 15%;
+        padding: 5px;
+    }
+    body{
+        width: 100%;
+    }
+    #des{
+        width: 19cm;
+        font-size: 20px;
+        height: 13cm;
+    }
+}
+*/

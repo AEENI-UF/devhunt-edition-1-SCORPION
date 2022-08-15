@@ -1,0 +1,12 @@
+body{
+    background-color: #131416;
+}
+
+#icon{
+    border: 3px inset brown;
+    width: 7cm;
+    height: 10cm;
+    background-color: rgb(238, 244, 242);
+    border-radius: 9px;
+    margin-left: 3cm;
+}

@@ -1,0 +1,52 @@
+.Page {
+    width: 980px;
+    margin: auto;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #3388BB;
+    border-bottom: 3px solid #3388DD;
+}
+
+
+/*.im1 {
+    float: right;
+}*/
+
+h1 {
+    font-size: 38px;
+    color: rgb(113, 20, 20);
+    border-bottom: 3px solid red;
+    text-align: center;
+}
+
+.im5 {
+    width: 980px;
+}
+
+.im2 {
+    width: 980px;
+}
+
+.im1 {
+    width: 9cm;
+    height: 7cm;
+    float: right;
+    margin-right: 1cm;
+}
+
+p {
+    font-size: 30px;
+}
+
+#nav {
+    background-color: aquamarine;
+}
+
+#nav ul li {
+    margin-left: 4cm;
+    display: inline-block;
+    color: brown;
+}

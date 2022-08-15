@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="inscription.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+       <h2> <::::></::::>AEENI<::::></::::></h2>
+        <legend>SIGN IN</legend>
+<br>
+<br>
+<form action="page2.html" name="formulaire">
+
+<label for=""><span>*</span>Prenom de notre directeur:</label><br>
+<input type="text" id="MR" placeholder="Entrer le nom de notre directeur actuel..." required>
+<br>
+<br>
+<label for=""><span>*</span> Nom:</label><br>
+<input type="text" placeholder="Entrer votre nom ..." required>
+ <br>
+ <br>
+<label for=""><span>*</span>Prenom:</label><br>
+<input type="text" placeholder="Entrer votre prenom..." required>
+<br>
+<br>
+<label for=""><span>*</span>Email:</label><br>
+<input type="mail" placeholder="Entrer votre email..." required>
+<br>
+<br>
+<label for=""><span>*</span>Num_Telephone:</label><br>
+<input type="text" maxlength="13" minlength="10" placeholder="Entrer votre numero tel..." required>
+<br>
+<br>
+<label for=""><span>*</span>Numero d'inscription:</label><br>
+<input type="text" name="directeur" minlength="4" maxlength="5" placeholder="Entrer votre nuumero matricule..." required>
+<br>
+<br>
+<br>
+<input type="submit" value="Envoyer">
+<input type="reset" value="Supprimer le formulaire">
+<br>
+<br>
+<br>
+</form>
+    </fieldset>
+    <br>
+
+
+    <script>
+
+        $('form[name="formulaire"]').submit(function(){
+            if($('form[name="inscription"] :text:first').val().length < 1){
+            alert('Veuillez completer le formulaire');
+            return false;
+            }
+            });
+       
+            $(':input').focus(function(){
+                $(this).css('background-color','white');
+                });
+                $(':input').blur(function(){
+                $(this).css('background-color','brown');
+
+                if ($('form[name="formulaire"] :text:first').val()!='Thomas'){
+                    alert("vous n'etes pas l'etudiant de l'ENI... bye!!");
+                }
+return false;
+            });
+  $(window).resize(function(){
+                        alert('Arrête de me redimensionner !');
+                        });
+                        $(document).unload(function(){
+                            alert('Au revoir et à bientôt !');
+                            });
+
+
+      /*  var dir = document.getElementById('MR').value;
+        function on_y_va() {
+             document.formulaire_test.submit();
+
+        if(dir!='THOMAS' || dir!='Thomas' || dir!='thomas'){
+
+            alert("VOUS N'ETES PAS DES ETUDIANT DE L'ENI");
+        }
+
+        } window.setTimeout("on_y_va()",1000);*/
+    </script>
+</body>
+</html>
