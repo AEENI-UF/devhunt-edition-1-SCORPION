@@ -1,0 +1,35 @@
+p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+/*
+
+#mug2 {
+    margin-left: 700px;
+    margin-top: -530px;
+}
+
+#tee-shirt2 {
+    margin-left: 700px;
+    margin-top: -450px;
+}
+
+*/
+#sary{
+    margin-left: 4cm;
+}
+
+header {
+    text-align: center;
+    background-color: aqua;
+}
+
+footer {
+    text-align: center;
+    background-color: aqua;
+}
+#pf{
+    width: 16cm;
+    height: 12cm;
+}

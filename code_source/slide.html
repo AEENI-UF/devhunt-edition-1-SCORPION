@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scorpion.com</title>
+</head>
+<body>
+<img name="name" alt="" id="xd">
+<p id="nom" name="nom"></p>
+<script>
+    var i=0;
+    var image=['job.jpg','DEVHUNT.gif','dev.jpg','DESIGNER.png','DEESIGN....gif'];
+
+    var time=2000;
+
+    function change(){
+
+
+        document.name.src=image[i];
+       
+
+
+
+        if (i<image.length-1) {
+            i++;
+        document.getElementById("xd").style.width='15cm';
+        document.getElementById("xd").style.height='12cm';
+        document.getElementById("xd").style.marginLeft='10cm';
+        document.getElementById("xd").style.marginTop='5cm';
+    }  else{
+          i=0;
+    }
+    setTimeout('change()',time);
+}
+window.onload=change;
+</script>
+
+
+<script>
+    var nom=['CLAVIEN','EDIT','HELYY','DUN','ERIC'];
+
+function text(){
+       if (t<nom.length-1){
+            t++;
+        document.getElementById("nom").style.color='black';
+        document.getElementById("nom").style.fontSize='30px';
+        document.getElementById("nom").style.fontSize='30px';
+        document.getElementById("nom").style.fontSize='30px';;
+    }
+        else{
+            t=0;
+        }
+        setTimeout('text()',time);
+    }
+    window.onload=change;
+    document.write(t);
+    alert("aonaa");
+</script>
+</body>
+</html>
