@@ -1,0 +1,31 @@
+div{
+    width: 10cm;
+    height: 5cm;
+    border: 10px inset rgb(153, 24, 24);
+    overflow: visible;
+    background-color: #eee;
+    margin-left: 15cm;
+}
+
+body{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #040404;
+  }
+
+  @media screen and (max-width: 1780px){
+    div {
+        width: 60%;
+        }
+    }
+
+  @media screen and (max-width: 1780px){
+    div {
+        width: 70%;
+
+    }
+  }

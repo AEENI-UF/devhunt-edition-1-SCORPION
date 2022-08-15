@@ -1,0 +1,61 @@
+#sary{
+    width: 15cm;
+    height: 20cm;
+    margin-left: 3cm;
+}
+
+button{
+    background-color: darkslategray;
+    margin-left: 10cm;
+    border-radius: 10px;
+}
+
+button a{
+    color: #FFFF;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.slide{
+    width: 20cm;
+    height: 18cm;
+    animation-name: c2e;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border: 5px inset #121416;
+}
+
+@keyframes c2e{
+    0%{background-image: url('c.jpg');}
+
+    25%{background-image: url('ip.jpg');}
+
+    50%{background-image: url('scea.jpg');}
+
+    75%{background-image: url('scean.jpg');}
+
+    100%{background-image: url('sceanc.jpg');}
+}
+
+.explic{
+    width: 16cm;
+    height: 5cm;
+    float: right;
+    margin-top: -15cm;
+}
+h1{
+    font-size: 50px;
+}
+
+@media screen and (max-width : 1300px) {
+    *{
+       width: 60%;
+    }
+    button{
+        width: 20%;
+        height: 6%;
+    }
+    body{
+        padding: -20%;
+    }
+}
